@@ -11,6 +11,16 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+@mixin font-roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin list-style-none{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 // === /Mixins ===
 
 
@@ -125,6 +135,20 @@ body{
         line-height: 140%;
         text-transform: uppercase;
         color: #FFFFFF;
+        transition: .2s;
+        &:hover, &:active, &focus{
+            color: rgba(114, 114, 114, 0.8);
+        }
+    }
+    svg{
+        transition: .2s;
+    }
+    &:hover, &:active, &focus{
+        svg{
+            path{
+                fill: rgba(114, 114, 114, 0.8);
+            }
+        }
     }
 }
 
@@ -202,6 +226,126 @@ body{
 // === /Header ===
 
 // === Footer ===
+
+.section-footer{
+    background: #1E1E1E;
+    padding: 72px 0 0;
+    .section-inner{
+        padding-bottom: 72px;
+    }
+}
+
+.footer-main{
+    display: flex;
+    //align-items: center;
+    justify-content: space-between;
+}
+
+.footer-services{
+    @include list-style-none();
+    li + li{
+        margin-top: 20px;
+    }
+    &__item{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 130%;
+        color: rgba(255, 255, 255, 0.8);
+        transition: .2s;
+        &:hover, &:active, &focus{
+           color: rgba(114, 114, 114, 0.8);
+        }
+    }
+    &__title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 130%;
+        color: #D3D8DC;
+    }
+}
+.footer-info{
+    @include list-style-none();
+    li + li{
+        margin-top: 20px;
+    }
+    &__item{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 130%;
+        color: rgba(255, 255, 255, 0.8);
+        &:hover, &:active, &focus{
+            color: rgba(114, 114, 114, 0.8);
+         }
+    }
+    &__title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 130%;
+        color: #D3D8DC;
+    }
+}
+.footer-contacts{
+    @include list-style-none();
+    li + li{
+        margin-top: 20px;
+    }
+    &__item{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 130%;
+        color: rgba(255, 255, 255, 0.8);
+        &:hover, &:active, &focus{
+            color: rgba(114, 114, 114, 0.8);
+        }
+    }
+    &__title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 130%;
+        color: #D3D8DC;
+    }
+    .footer-contacts__phone{
+        max-width: 140px;
+    }
+}
+.footer-socials{
+    @include list-style-none();
+    li + li{
+        margin-top: 20px;
+    }
+    &__item{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 130%;
+        color: rgba(255, 255, 255, 0.8);
+        &:hover, &:active, &focus{
+            color: rgba(114, 114, 114, 0.8);
+        }
+    }
+    &__title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 130%;
+        color: #D3D8DC;
+    }
+    .change-lang-btn{
+        margin-top: 92px;
+    }
+}
+
+.footer-copyright{
+    background-color: black;
+    padding: 12px 0;
+}
+
+.site-copyright{
+    @include font-roboto;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 130%;
+    text-align: center;
+    color: #CED7DF
+}
 
 // === /Footer ===
 
@@ -288,6 +432,9 @@ body{
             align-self: flex-start;
         }
     }
+
+    
+
 }
 
 @media (max-width: 900px){
@@ -300,6 +447,16 @@ body{
     .section-inner{
         max-width: 600px;
     }
+    // === Media Footer ===
+
+    .footer-main{
+        flex-direction: column;
+        ul+ul{
+            margin-bottom: 64px;
+        }
+    }
+
+    // === Media /Footer ===
 }
 
 @media (max-width: 700px){
