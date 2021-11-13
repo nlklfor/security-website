@@ -1,0 +1,43 @@
+// === Imports ===
+
+@import 'normalize.scss';
+
+// === /Imports ===
+
+// === Mixins ===
+
+
+@mixin font-montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+
+// === /Mixins ===
+
+
+// === Common ===
+
+*{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,p{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    @include font-montserrat;
+}
+
+.section-inner{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+// === /Common ===
+
+// === Header ===
+
+
+
+// === Footer ===
