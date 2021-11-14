@@ -563,6 +563,150 @@ body {
   top: 50%;
 }
 
+.section-aboutus {
+  background-color: #1E1E1E;
+}
+.section-aboutus .section-inner__main .section-image {
+  width: 1280px;
+  height: 720px;
+  background: url(../img/AboutUs.png) no-repeat center;
+}
+.section-aboutus .section-inner__main .section-image .section-title h1 {
+  padding-top: 230px;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.section-aboutus .section-inner__main .section-image .section-title .section-subtitle h2 {
+  padding-top: 32px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.section-service {
+  background-color: white;
+}
+.section-service .section-inner-title h1 {
+  padding-top: 120px;
+  padding-bottom: 80px;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  color: #1E1E1E;
+}
+.section-service .section-inner__statistics {
+  padding-bottom: 120px;
+}
+.section-service .section-inner__statistics_count p {
+  font-weight: 600;
+  font-size: 56px;
+  color: #000000;
+}
+.section-service .section-inner__statistics_count .big-business {
+  position: absolute;
+  top: 112%;
+}
+.section-service .section-inner__statistics_count .small-business {
+  position: absolute;
+  top: 133%;
+}
+.section-service .section-inner__statistics_count .flats {
+  position: absolute;
+  top: 112%;
+  left: 73%;
+}
+.section-service .section-inner__statistics_count .cottages {
+  position: absolute;
+  left: 73%;
+  top: 135%;
+}
+.section-service .section-inner__statistics .section-subtitle p {
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+}
+.section-service .section-inner__statistics .section-subtitle .big-business {
+  position: absolute;
+  top: 120%;
+}
+.section-service .section-inner__statistics .section-subtitle .small-business {
+  position: absolute;
+  top: 142%;
+}
+.section-service .section-inner__statistics .section-subtitle .flats {
+  position: absolute;
+  top: 120%;
+}
+.section-service .section-inner__statistics .section-subtitle .cottages {
+  position: absolute;
+  top: 143%;
+}
+
+.section-zone {
+  background-color: #1E1E1E;
+}
+.section-zone .section-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.section-zone .section-inner__map {
+  padding-top: 120px;
+  padding-bottom: 140px;
+}
+.section-zone .section-inner__list {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-left: 140px;
+  display: block;
+}
+.section-zone .section-inner__list h1 {
+  padding-bottom: 40px;
+  position: relative;
+  font-weight: bold;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+.section-zone .section-inner__list ul {
+  padding-bottom: 36px;
+}
+.section-zone .section-inner__list ullast-child {
+  padding-bottom: 0;
+}
+.section-zone .section-inner__list ul p {
+  position: absolute;
+  left: 61%;
+  font-weight: 600;
+  font-size: 24px;
+  color: #F4F4F5;
+}
+.section-zone .section-inner__list ul li {
+  cursor: pointer;
+  list-style: none;
+  margin-bottom: 8px;
+  font-weight: normal;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.section-team {
+  background-color: white;
+}
+.section-team .section-inner-title {
+  padding-top: 120px;
+  padding-bottom: 50px;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  color: #1E1E1E;
+}
+.section-team .section-inner__photo {
+  padding-bottom: 120px;
+}
+
 .section-footer {
   background: #1E1E1E;
   padding: 72px 0 0;

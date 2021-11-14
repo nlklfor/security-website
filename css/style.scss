@@ -225,6 +225,190 @@ body{
 
 // === /Header ===
 
+
+// === AboutUs ===
+
+    .section-aboutus{
+        background-color: #1E1E1E;
+        .section-inner{
+            
+            &__main{
+                .section-image{
+                        
+                        width: 1280px;
+                        height: 720px;
+                        background:url(../img/AboutUs.png) no-repeat center ;
+                        
+                    .section-title{
+                        h1{
+                            padding-top: 230px;
+                            font-weight: bold;
+                            font-size: 50px;
+                            text-align: center;
+                            color: #FFFFFF;
+                        }
+                        .section-subtitle{
+                            h2{
+                                padding-top: 32px;
+                                font-weight: 500;
+                                font-size: 18px;
+                                text-align: center;
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+// === /AboutUs ===
+
+// === Service ===
+ 
+.section-service{
+    background-color: white;
+    .section-inner{
+        &-title{
+            h1{
+                padding-top: 120px;
+                padding-bottom: 80px;
+                font-weight: bold;
+                font-size: 36px;
+                text-align: center;
+                color: #1E1E1E;
+            }
+        }
+        &__statistics{
+            padding-bottom: 120px;
+            &_count{
+                
+                p{
+                    font-weight: 600;
+                    font-size: 56px;
+                    color: #000000;
+                }
+                .big-business{
+                    position: absolute;
+                    top: 112%;
+                }
+                .small-business{
+                    position: absolute;
+                    top: 133%;
+                }
+                .flats{
+                    position: absolute;
+                    top: 112%;
+                    left: 73%;
+                }
+                .cottages{
+                    position: absolute;
+                    left: 73%;
+                    top: 135%;
+                }
+            }
+            .section-subtitle{
+                p{
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: #000000;
+                    
+                }
+                .big-business{
+                    position: absolute;
+                    top: 120%;
+                }
+                .small-business{
+                    position: absolute;
+                    top: 142%;
+                }
+                .flats{
+                    position: absolute;
+                    top: 120%;
+                }
+                .cottages{
+                    position: absolute;
+                    top: 143%;
+                }
+            }
+        }
+    }
+}
+
+// === /Service ===
+
+// === Zone ===
+
+.section-zone{
+    background-color:#1E1E1E;
+    
+    .section-inner{
+        display: flex;
+        &__map{
+            padding-top: 120px;
+            padding-bottom: 140px;
+        }
+        &__list{
+            padding-top: 120px;
+            padding-bottom: 120px;
+            padding-left: 140px;
+            display: block;
+            h1{
+                padding-bottom: 40px;
+                position: relative;
+                font-weight: bold;
+                font-size: 36px;
+                color: #FFFFFF;
+            }
+            ul{
+                padding-bottom: 36px;
+                &last-child{
+                    padding-bottom: 0;
+                }
+                p{
+                    position: absolute;
+                    left: 61%;
+                    font-weight: 600;
+                    font-size: 24px;
+                    color: #F4F4F5;
+                }
+                    li{
+                        cursor: pointer;
+                        list-style: none;
+                        margin-bottom: 8px;
+                        font-weight: normal;
+                        font-size: 18px;
+                        color: #FFFFFF;
+                    }
+            }
+        }
+    }
+}
+
+// === /Zone ===
+
+// === Team ===
+
+.section-team{
+    background-color: white;
+    .section-inner{
+        &-title{
+            padding-top: 120px;
+            padding-bottom: 50px;
+            font-weight: bold;
+            font-size: 24px;
+            text-align: center;
+            color: #1E1E1E;
+        }
+        &__photo{
+            padding-bottom: 120px;
+        }
+    }
+}
+
+// === /Team ===
+
+
 // === Footer ===
 
 .section-footer{
