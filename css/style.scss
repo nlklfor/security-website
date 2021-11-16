@@ -226,6 +226,78 @@ body{
 // === /Header ===
 
 
+// === Promo ===
+
+
+.section-promo{
+    background: #1E1E1E;
+    padding: 80px 0 100px;
+    .section-inner{
+        background: url(../img/index-promo.png) 100% no-repeat;
+        background-size: cover;
+        width: 100%;
+        padding: 72px 0 160px 56px;
+    }
+}
+
+.promo-title{
+    max-width: 600px;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+.promo-subtitle{
+    max-width: 600px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: #FFFFFF;
+    margin-bottom: 48px;
+}
+.send-button{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 28px;
+    padding: 12px 8px 12px 32px;
+    svg{
+        margin-left: 28px;
+        transition: .4s;
+        path{
+            transition: .4s;
+        }
+    }
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    border: none;
+    transition: .4s;
+    border: 1px solid #FFFFFF;
+}
+.promo__send-button{
+    box-sizing: border-box;
+    color: #1E1E1E;
+    background: #FFFFFF;
+    &:hover, &:active, &:focus{
+        color: #FFFFFF;
+        background: #1E1E1E;
+        border: 1px solid #FFFFFF;
+        svg{
+            path{
+                fill: white;
+            }
+        }
+    }
+}
+
+
+// === /Promo ===
+
+
+
+
 // === AboutUs ===
 
     .section-aboutus{
@@ -617,7 +689,16 @@ body{
         }
     }
 
-    
+    // === RPromo ===
+
+    .section-promo{
+        padding: 0;
+        .section-inner{
+           max-width: 100%;
+        }
+    }
+
+    // === /RPromo ===
 
 }
 
@@ -647,6 +728,21 @@ body{
     .section-inner{
         max-width: 500px;
     }
+
+    // === RPromo ===
+
+    .section-promo{
+        .section-inner{
+            padding-top: 278px;
+            background-position: 80%;
+        }
+        .promo-title{
+            font-size: 32px;
+        }
+    }
+
+    // === /RPromo ===
+
 }
 
 @media (max-width: 600px){
@@ -666,7 +762,7 @@ body{
 
 @media (max-width: 400px){
     .section-inner{
-        max-width: 320px;
+        max-width: 300px;
     }
 }
 

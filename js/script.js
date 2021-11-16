@@ -1,5 +1,7 @@
 
 
+// === Burger ===
+
 function burgerMenu(){
     const burgerBtn = document.querySelector('.burger-btn');
     const headerMenu = document.querySelector('.header-menu');
@@ -11,6 +13,7 @@ function burgerMenu(){
 
 burgerMenu();
 
+// === /Burger ===
 
 
 function outNum1(num, elem) {
@@ -22,10 +25,10 @@ function outNum1(num, elem) {
     let interval = setInterval(() => {
         a = a + step;
         if(a == num) {
-              clearInterval(interval);
-         }
-    f.innerHTML = a;
-                },
+            clearInterval(interval);
+        }
+        f.innerHTML = a;
+    },
   s);
 };
 outNum1(50000, '#out1');  
@@ -40,11 +43,11 @@ function outNum2(num, elem) {
     let interval = setInterval(() => {
         m = m + step;
         if(m == num) {
-              clearInterval(interval);
-         }
-    q.innerHTML = m;
-                },
-  z);
+            clearInterval(interval);
+        }
+        q.innerHTML = m;
+    },
+    z);
 };
 outNum2(42000, '#out2');  
 
@@ -58,10 +61,10 @@ function outNum3(num, elem) {
     let interval = setInterval(() => {
         p = p + step;
         if(p == num) {
-              clearInterval(interval);
-         }
-    n.innerHTML = p;
-                },
+            clearInterval(interval);
+        }
+        n.innerHTML = p;
+    },
   w);
 };
 outNum3(25000, '#out3');
@@ -76,10 +79,10 @@ function outNum4(num, elem) {
     let interval = setInterval(() => {
         d = d + step;
         if(d == num) {
-              clearInterval(interval);
-         }
-    i.innerHTML = d;
-                },
+            clearInterval(interval);
+        }
+        i.innerHTML = d;
+    },
   b);
 };
 outNum4(18000, '#out4');  

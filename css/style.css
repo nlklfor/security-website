@@ -563,6 +563,78 @@ body {
   top: 50%;
 }
 
+.section-promo {
+  background: #1E1E1E;
+  padding: 80px 0 100px;
+}
+.section-promo .section-inner {
+  background: url(../img/index-promo.png) 100% no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 72px 0 160px 56px;
+}
+
+.promo-title {
+  max-width: 600px;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 140%;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+
+.promo-subtitle {
+  max-width: 600px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  color: #FFFFFF;
+  margin-bottom: 48px;
+}
+
+.send-button {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 28px;
+  padding: 12px 8px 12px 32px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  border: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: 1px solid #FFFFFF;
+}
+.send-button svg {
+  margin-left: 28px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.send-button svg path {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.promo__send-button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #1E1E1E;
+  background: #FFFFFF;
+}
+.promo__send-button:hover, .promo__send-button:active, .promo__send-button:focus {
+  color: #FFFFFF;
+  background: #1E1E1E;
+  border: 1px solid #FFFFFF;
+}
+.promo__send-button:hover svg path, .promo__send-button:active svg path, .promo__send-button:focus svg path {
+  fill: white;
+}
+
 .section-aboutus {
   background-color: #1E1E1E;
 }
@@ -941,6 +1013,13 @@ body {
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
+
+  .section-promo {
+    padding: 0;
+  }
+  .section-promo .section-inner {
+    max-width: 100%;
+  }
 }
 @media (max-width: 900px) {
   .section-inner {
@@ -966,6 +1045,14 @@ body {
   .section-inner {
     max-width: 500px;
   }
+
+  .section-promo .section-inner {
+    padding-top: 278px;
+    background-position: 80%;
+  }
+  .section-promo .promo-title {
+    font-size: 32px;
+  }
 }
 @media (max-width: 600px) {
   .section-inner {
@@ -984,6 +1071,6 @@ body {
 }
 @media (max-width: 400px) {
   .section-inner {
-    max-width: 320px;
+    max-width: 300px;
   }
 }
