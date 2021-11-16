@@ -296,6 +296,86 @@ body{
 // === /Promo ===
 
 
+// === reliability ===
+
+.section-reliability{
+    padding: 80px 0 120px;
+    background-color: #E5E5E5;
+    .section-inner{
+        display: flex;
+        align-items: center;
+    }
+    .section-title{
+        margin-bottom: 24px;
+    }
+}
+
+.section-title{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+}
+
+.reliability-list{
+    max-width: 600px;
+    @include list-style-none;
+    &__title{
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 180%;
+        color: #000000;
+        margin-bottom: 16px;
+    }
+    &__item{
+        font-weight: normal;
+        font-size: 14px;
+        &+&{
+            margin-top: 12px;
+        }
+    }
+    margin-bottom: 40px;
+}
+
+.btn-primary{
+    transition: .4s;
+    cursor: pointer;
+    background: #1E1E1E;
+    border-radius: 28px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #FFFFFF;
+    border: 1px solid #1E1E1E;
+
+    display: flex;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    padding: 13px 8px 13px 32px;
+
+    border: none;
+
+    svg{
+        margin-left: 28px;
+    }
+
+    &:hover, &:active, &:focus{
+        color: #1E1E1E;
+        background: white;
+        border: 1px solid #1E1E1E;
+
+        svg{
+            path{
+                fill: #1E1E1E;
+            }
+        }
+    }
+
+}
+
+// === /reliability ===
 
 
 // === AboutUs ===
@@ -699,6 +779,23 @@ body{
     }
 
     // === /RPromo ===
+
+
+    // === reliability ===
+
+    .section-reliability{
+        &__title{
+            text-align: center;
+        }
+    }
+    .reliability-list__title{
+        text-align: center;
+    }
+    .section-reliability__image{
+        display: none;
+    }
+
+    // === /reliability ===
 
 }
 
