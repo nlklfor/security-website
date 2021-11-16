@@ -404,6 +404,7 @@ body{
                                 padding-top: 32px;
                                 font-weight: 500;
                                 font-size: 18px;
+                               
                                 text-align: center;
                                 color: #FFFFFF;
                             }
@@ -560,6 +561,105 @@ body{
 
 // === /Team ===
 
+// === Application ===
+
+.section-application{
+    background-color:white;
+    .section-inner{
+        display: flex;
+        &__content{
+            &__title{
+
+                padding-bottom: 30px;
+                font-weight: 600;
+                font-size: 36px;
+                color: #1E1E1E;
+            }
+            &__subtitle{
+                padding-bottom: 40px;
+                font-weight: normal;
+                font-size: 16px;
+                color: #000000;
+    
+            }
+            &__text{
+
+                display: block;
+            }
+            &__application{
+               
+                &-placeholder{
+                    input{
+                        
+                        margin-bottom: 12px;
+                        font-weight: normal;
+                        font-size: 14px;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        padding-right: 400px;
+                        padding-left: 10px;
+                        color: #777777;
+                        background: #F5F5F5;
+                        border-radius: 5px;
+                        border: none;
+                        background: #F5F5F5;
+                        border-radius: 5px;
+                    }   
+                }
+                .section-application__button{
+                    padding-top: 20px;
+                    display: flex;
+                    align-items:center;
+                    
+                    input{
+                        margin-right: 12px;
+                    }
+                    label{
+                       padding-right: 250px;
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: #777777;
+                    }
+                    button{
+                        transition: .4s;
+                        cursor: pointer;
+                        background: #1E1E1E;
+                        border-radius: 28px;
+                        font-weight: 600;
+                        font-size: 14px;
+                        color: #FFFFFF;
+                        border: 1px solid #1E1E1E;
+                        display: flex;
+                        align-items: center;
+                        box-sizing: border-box;
+                        padding: 12px 32px 12px 62px ;
+                        border: none;
+    
+                        &:hover, &:active, &:focus{
+                            color: #000000;
+                            background: rgba(30, 30, 30, 0.2);
+                            
+                    
+                            svg{
+                                path{
+                                    fill: #000000;
+                                }
+                            }
+                        }
+                        svg{
+                            margin-left: 30px ;
+                        }
+                    }
+                }
+            }
+        }
+        &__photo{
+            max-width: 300px;
+        }
+    }
+}
+
+// === /Application ===
 
 // === Footer ===
 

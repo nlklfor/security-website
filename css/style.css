@@ -858,6 +858,97 @@ body {
   padding-bottom: 120px;
 }
 
+.section-application {
+  background-color: white;
+}
+.section-application .section-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.section-application .section-inner__content__title {
+  padding-bottom: 30px;
+  font-weight: 600;
+  font-size: 36px;
+  color: #1E1E1E;
+}
+.section-application .section-inner__content__subtitle {
+  padding-bottom: 40px;
+  font-weight: normal;
+  font-size: 16px;
+  color: #000000;
+}
+.section-application .section-inner__content__text {
+  display: block;
+}
+.section-application .section-inner__content__application-placeholder input {
+  margin-bottom: 12px;
+  font-weight: normal;
+  font-size: 14px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 400px;
+  padding-left: 10px;
+  color: #777777;
+  background: #F5F5F5;
+  border-radius: 5px;
+  border: none;
+  background: #F5F5F5;
+  border-radius: 5px;
+}
+.section-application .section-inner__content__application .section-application__button {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section-application .section-inner__content__application .section-application__button input {
+  margin-right: 12px;
+}
+.section-application .section-inner__content__application .section-application__button label {
+  padding-right: 250px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #777777;
+}
+.section-application .section-inner__content__application .section-application__button button {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+  background: #1E1E1E;
+  border-radius: 28px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #FFFFFF;
+  border: 1px solid #1E1E1E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 12px 32px 12px 62px;
+  border: none;
+}
+.section-application .section-inner__content__application .section-application__button button:hover, .section-application .section-inner__content__application .section-application__button button:active, .section-application .section-inner__content__application .section-application__button button:focus {
+  color: #000000;
+  background: rgba(30, 30, 30, 0.2);
+}
+.section-application .section-inner__content__application .section-application__button button:hover svg path, .section-application .section-inner__content__application .section-application__button button:active svg path, .section-application .section-inner__content__application .section-application__button button:focus svg path {
+  fill: #000000;
+}
+.section-application .section-inner__content__application .section-application__button button svg {
+  margin-left: 30px;
+}
+.section-application .section-inner__photo {
+  max-width: 300px;
+}
+
 .section-footer {
   background: #1E1E1E;
   padding: 72px 0 0;
