@@ -708,10 +708,86 @@ body {
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
   color: #1E1E1E;
   background: white;
-  border: 1px solid #1E1E1E;
 }
 .btn-primary:hover svg path, .btn-primary:active svg path, .btn-primary:focus svg path {
   fill: #1E1E1E;
+}
+
+.section-services-slider {
+  background: #FFFFFF;
+  padding: 116px 0 100px;
+}
+.section-services-slider .slider-title {
+  margin-bottom: 56px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+}
+.section-services-slider .slider-title .section-title {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-column-span: 1;
+  grid-column-end: 3;
+  text-align: center;
+}
+.section-services-slider .slider-title .slider-arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  -ms-grid-column-span: 1;
+  grid-column-end: 4;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  width: 200px;
+}
+.section-services-slider .slider-title .slider-arrows__item:last-child {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.section-services-slider .slider-title .slider-arrows svg {
+  cursor: pointer;
+}
+.section-services-slider .slider-title .slider-arrows svg:hover path {
+  fill: black;
+}
+
+.services-slider__wrapper {
+  margin-bottom: 56px;
+}
+.services-slider-item {
+  min-height: 420px;
+  min-width: 320px;
+  background-color: #F4F4F5;
+  padding: 32px 32px 0 32px;
+}
+.services-slider-item__icon {
+  margin-bottom: 40px;
+}
+.services-slider-item__title {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.services-slider-item__subtitle {
+  max-width: 290px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+  color: #000000;
 }
 
 .section-aboutus {
@@ -1221,6 +1297,10 @@ body {
   }
   .footer-main ul + ul {
     margin-bottom: 64px;
+  }
+
+  .slider-arrows {
+    display: none !important;
   }
 }
 @media (max-width: 700px) {

@@ -364,8 +364,6 @@ body{
     &:hover, &:active, &:focus{
         color: #1E1E1E;
         background: white;
-        border: 1px solid #1E1E1E;
-
         svg{
             path{
                 fill: #1E1E1E;
@@ -376,6 +374,78 @@ body{
 }
 
 // === /reliability ===
+
+
+// === Services slider ===
+
+.section-services-slider{
+    background: #FFFFFF;
+    padding: 116px 0 100px;
+    .slider-title{
+        margin-bottom: 56px;
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        .section-title{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            text-align: center;
+        }
+        .slider-arrows{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &__item{
+                &:last-child{
+                    transform: rotate(180deg);
+                }
+            }
+            svg{
+                cursor: pointer;
+                &:hover{
+                    path{
+                        fill: black;
+                    }
+                }
+            }
+            grid-column-start: 3;
+            grid-column-end: 4;
+            justify-self: end;
+            width: 200px;
+        }
+    }
+}
+
+.services-slider{
+    &__wrapper{
+        margin-bottom: 56px;
+    }
+    &-item{
+        min-height: 420px;
+        min-width: 320px;
+        background-color: #F4F4F5;
+        padding: 32px 32px 0 32px;
+        &__icon{
+            margin-bottom: 40px;
+        }
+        &__title{
+            margin-bottom: 16px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: #000000
+        }
+        &__subtitle{
+            max-width: 290px;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 160%;
+            color: #000000
+        }
+    }
+}
+
+// === /Services slider ===
 
 
 // === AboutUs ===
@@ -916,6 +986,10 @@ body{
         ul+ul{
             margin-bottom: 64px;
         }
+    }
+
+    .slider-arrows{
+        display: none !important;
     }
 
     // === Media /Footer ===
