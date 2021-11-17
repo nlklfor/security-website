@@ -448,6 +448,61 @@ body{
 // === /Services slider ===
 
 
+// === Algorithm ===
+
+.section-algorithm{
+    padding: 116px 0 140px;
+    background: #1E1E1E;
+    &__title{
+        margin-bottom: 56px;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        color: #FFFFFF
+    }
+}
+
+.algorithm-cards{
+    &__item{
+        width: 218px;
+    }
+    display: flex;
+    //align-items: center;
+    justify-content: space-between;
+    &-card{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
+        
+        height: 240px;
+        &__number{
+            color: rgba(255, 255, 255, 0.1);
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 130%;
+        }
+        &__icon{
+            margin: auto;
+            text-align: center;
+            vertical-align: middle;
+        }
+    }
+    &__subtitle{
+        max-width: 100%;
+        margin: 0 auto;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
+
+// === /Algorithm ===
+
+
 // === AboutUs ===
 
     .section-aboutus{
@@ -859,6 +914,9 @@ body{
 
 // === MEDIA ===
 
+
+
+
 @media (max-width: 1400px){
     .section-inner{
         max-width: 1100px;
@@ -868,6 +926,14 @@ body{
     }
     .header-contacts{
         margin-right: 40px;
+    }
+    .algorithm-cards{
+        flex-wrap: wrap;
+        &__item{
+            &+&{
+                margin-left: 20px;
+            }
+        }
     }
 }
 
@@ -1022,6 +1088,11 @@ body{
     }
     .site-logo{
         flex-basis: 70%;
+    }
+    .algorithm-cards{
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
     }
 }
 
