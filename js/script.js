@@ -15,7 +15,7 @@ burgerMenu();
 
 // === /Burger ===
 
-// === Swiper ===
+// === Swipers ===
 
 const swiper = new Swiper('.swiper', {
   
@@ -24,13 +24,13 @@ const swiper = new Swiper('.swiper', {
 
     // Navigation arrows
     navigation: {
-        nextEl: '.swiper-button-next-unique',
-        prevEl: '.swiper-button-prev-unique'
+        nextEl: '.swiper-button-next-unique-services',
+        prevEl: '.swiper-button-prev-unique-services'
     },
 
     // And if we need scrollbar
     scrollbar: {
-        el: '.swiper-scrollbar',
+        el: '.swiper-scrollbar-services',
     },
 
     breakpoints:{
@@ -47,4 +47,35 @@ const swiper = new Swiper('.swiper', {
 
 });
 
-// === /Swiper ===
+
+const swiperReviews = new Swiper('.swiper-reviews', {
+  
+    slidesPerView: 3,
+    spaceBetween: 40,
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next-unique-reviews-reviews',
+        prevEl: '.swiper-button-prev-unique-reviews-reviews'
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar-reviews',
+    },
+
+    breakpoints:{
+        1000:{
+            slidesPerView: 3,
+        },
+        600:{
+            slidesPerView: 2,
+        },
+        300:{
+            slidesPerView: 1,
+        },
+    }
+
+});
+
+// === /Swipers ===
