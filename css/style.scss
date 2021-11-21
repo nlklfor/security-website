@@ -1363,6 +1363,24 @@ main{
 // === /Footer ===
 
 
+// === ps-sec ===
+
+.ps-section-promo{
+    padding: 80px 0 100px;
+    background-color: #1E1E1E;
+    .section-inner{
+        display: grid;
+    }
+    .ps-promo-content{
+        z-index: 1;
+    }
+    .ps-promo-img{
+
+    }
+}
+
+// === /ps-sec ===
+
 
 // === MEDIA ===
 
