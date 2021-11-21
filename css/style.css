@@ -904,6 +904,74 @@ body {
   color: #1E1E1E;
 }
 
+.section-reviews {
+  padding: 122px 0 116px;
+  background: #FFFFFF;
+}
+
+.reviews-slider-item {
+  padding: 32px;
+  width: 416px !important;
+  height: 245px !important;
+  background: #F4F4F5;
+  border-radius: 10px;
+}
+.reviews-slider-item__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+.reviews-slider-item__desc {
+  width: 352px;
+  max-height: 104px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #000000;
+  margin-bottom: 24px;
+}
+.reviews-slider-item__btn-read-more {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1E1E1E;
+  border-bottom: 1px dashed #1E1E1E;
+  text-decoration: none;
+}
+
+.reviews-slider__wrapper {
+  margin-bottom: 56px;
+}
+
+.section-licenses {
+  background: #1E1E1E;
+  padding: 116px 0;
+}
+.section-licenses .section-title {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.section-licenses .licenses-swiper-scrollbar {
+  background: #777777;
+}
+.section-licenses .licenses-swiper-scrollbar .swiper-scrollbar-drag {
+  background: #FFFFFF;
+}
+.section-licenses .swiper-button-prev-unique-licenses:hover svg path, .section-licenses .swiper-button-prev-unique-licenses:focus svg path, .section-licenses .swiper-button-prev-unique-licenses:active svg path, .section-licenses .swiper-button-next-unique-licenses:hover svg path, .section-licenses .swiper-button-next-unique-licenses:focus svg path, .section-licenses .swiper-button-next-unique-licenses:active svg path {
+  fill: #8d8d8d;
+}
+
 .section-aboutus {
   background-color: #1E1E1E;
 }

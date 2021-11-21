@@ -17,7 +17,7 @@ burgerMenu();
 
 // === Swipers ===
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.services-swiper', {
   
     slidesPerView: 3,
     spaceBetween: 40,
@@ -30,7 +30,7 @@ const swiper = new Swiper('.swiper', {
 
     // And if we need scrollbar
     scrollbar: {
-        el: '.swiper-scrollbar-services',
+        el: '.services-swiper-scrollbar',
     },
 
     breakpoints:{
@@ -48,34 +48,34 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-const swiperReviews = new Swiper('.swiper-reviews', {
+const swiper2 = new Swiper('.reviews-swiper', {
   
     slidesPerView: 3,
+    spaceBetween: 24,
+
+    navigation: {
+      nextEl: '.swiper-button-next-unique-reviews',
+      prevEl: '.swiper-button-prev-unique-reviews ',
+    },
+  
+    scrollbar: {
+      el: '.reviews-swiper-scrollbar',
+    },
+});
+
+const swiper3 = new Swiper('.licenses-swiper', {
+  
+    slidesPerView: 4,
     spaceBetween: 40,
 
-    // Navigation arrows
     navigation: {
-        nextEl: '.swiper-button-next-unique-reviews-reviews',
-        prevEl: '.swiper-button-prev-unique-reviews-reviews'
+      nextEl: '.swiper-button-next-unique-licenses',
+      prevEl: '.swiper-button-prev-unique-licenses ',
     },
-
-    // And if we need scrollbar
+  
     scrollbar: {
-        el: '.swiper-scrollbar-reviews',
+      el: '.licenses-swiper-scrollbar',
     },
-
-    breakpoints:{
-        1000:{
-            slidesPerView: 3,
-        },
-        600:{
-            slidesPerView: 2,
-        },
-        300:{
-            slidesPerView: 1,
-        },
-    }
-
 });
 
 // === /Swipers ===

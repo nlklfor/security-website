@@ -559,6 +559,86 @@ body{
 
 // === /Features ===
 
+// == Reviews ===
+
+.section-reviews{
+    padding: 122px 0 116px;
+    background: #FFFFFF;
+}
+
+.reviews-slider-item{
+    padding: 32px;
+    width: 416px !important;
+    height: 245px !important;
+    background: #F4F4F5;
+    border-radius: 10px;
+    &__title{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #000000;
+        margin-bottom: 16px;
+    }
+    &__desc{
+        width: 352px;
+        max-height: 104px;
+        overflow:hidden;
+        text-overflow: ellipsis;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 160%;
+        color: #000000;
+        margin-bottom: 24px;
+    }
+    &__btn-read-more{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #1E1E1E;
+        border-bottom: 1px dashed #1E1E1E;
+        text-decoration: none;
+    }
+}
+
+.reviews-slider__wrapper{
+    margin-bottom: 56px;
+}
+// === /Reviews ===
+
+// === Licenses ===
+
+.section-licenses{
+    background: #1E1E1E;
+    padding: 116px 0;
+    .section-title{
+        grid-column-start: 1;
+        justify-self: end;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .licenses-swiper-scrollbar{
+        background: #777777;
+        .swiper-scrollbar-drag{
+            background: #FFFFFF;
+        }
+    }
+    .swiper-button-prev-unique-licenses, .swiper-button-next-unique-licenses{
+        &:hover, &:focus, &:active{
+            svg{
+                path{
+                    fill: #8d8d8d;
+                }
+            }
+        }
+    }
+}
+
+// === /Licenses ===
+
+
 // === AboutUs ===
 
     .section-aboutus{
@@ -566,8 +646,7 @@ body{
         .section-inner{
             
             &__main{
-                .section-image{
-                        
+                .section-image{   
                         width: 1280px;
                         height: 720px;
                         background:url(../img/AboutUs.png) no-repeat center ;
