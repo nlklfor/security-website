@@ -750,7 +750,7 @@ body{
         display: flex;
         &__content{
             &__title{
-
+                padding-top: 110px;
                 padding-bottom: 30px;
                 font-weight: 600;
                 font-size: 36px;
@@ -789,6 +789,7 @@ body{
                 }
                 .section-application__button{
                     padding-top: 20px;
+                    padding-bottom: 60px;
                     display: flex;
                     align-items:center;
                     
@@ -841,6 +842,313 @@ body{
 }
 
 // === /Application ===
+
+// === News ===
+
+.section-news{
+    background: #E5E5E5;
+    .section-inner{
+        a{
+           color: black;
+           text-decoration: none; 
+        }
+        &__title{
+            padding-top: 100px;
+            padding-bottom: 50px;
+            font-weight: bold;
+            font-size: 36px;
+            text-align: center;
+        }
+        &__container{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            &__item{
+
+                &-title{
+                    padding-top: 25px;
+                    padding-bottom: 15px;
+                    font-weight: 600;
+                    font-size: 18px;
+                    
+                    
+                }
+                &-subtitle{
+                    font-weight: normal;
+                    padding-bottom: 15px;
+                    font-size: 14px;
+                    
+                }
+                &-date{
+                    a{
+                        text-decoration: none;
+                        color: rgba(30, 30, 30, 0.5);
+                    }
+                    padding-bottom: 130px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    
+                }
+            }
+        }
+        &__pages{
+            padding-bottom: 85px;
+            text-align: center;
+            align-items:center;
+            #left{
+                margin-right: 50px;
+            }
+            #right{
+                margin-left: 50px;
+            }
+            #page1{
+                color: black;
+            }
+            .list-pages{
+                padding: 20px;
+                font-weight: 600;
+                font-size: 18px;
+                color: rgba(30, 30, 30, 0.5);
+                transition: .2s;
+                &:hover, &:active, &focus{
+                color: rgba(0, 0, 0, 0.8);
+                }
+            }
+        }
+    }
+}
+
+// === /News ===
+
+// === Card ===
+
+.section-card{
+    
+    background: #E5E5E5;
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    &__back{
+        padding-left: 80px;
+        padding-top: 30px;
+    }
+    .section-inner{
+        display: flex;
+        justify-content: center;
+        &__card{
+            &-title{
+                font-weight: bold;
+                font-size: 36px;
+                text-align: center;
+                color: #1E1E1E;
+                padding-bottom: 15px;
+                padding-top: 50px;
+            }
+            &-data{
+                padding-bottom: 20px;
+                font-weight: 600;
+                font-size: 14px;
+                color: rgba(30, 30, 30, 0.5);
+            }
+            &-logo{
+                align-items:center;
+            }
+
+            &-subtitle{
+                font-weight: 600;
+                font-size: 20px;
+                color: #000000;
+            }
+
+            &-desc{
+                padding-top: 25px;
+                padding-bottom: 25px;
+                font-weight: normal;
+                font-size: 16px;
+                color: #000000;
+            }
+
+            &-list{
+                font-weight: normal;
+                font-size: 16px;
+                color: #000000;
+            }
+
+            &-socials{
+                border-top: 1px solid #000000;
+                border-bottom: 1px solid #000000;
+                display: flex;
+                justify-content: space-between;
+                &-title{
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    color: #000000;
+                }
+                
+            }
+            &-images{
+                display: flex;
+                align-items:center;
+                justify-content: space-between;
+                svg{
+                    cursor: pointer;
+                    margin-left: 25px;
+                    transition: .2s;
+                    &:hover{
+                        path{
+                            fill: rgb(0, 0, 0);
+                        }
+                    }
+                }
+            }
+            &-prevnxt{
+                display: flex;
+                justify-content: space-between;
+                padding-top: 50px;
+                padding-bottom: 120px;
+                &-previous{
+                    svg{
+                        margin-right: 20px;
+                    }
+                    display: flex;
+                    align-items:center;
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+                &-next{
+                    svg{
+                        margin-left: 20px;
+                    }
+                    display: flex;
+                    align-items:center;
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+// === /Card ===
+
+// === More Cards ===
+
+.section-more{
+    background-color:white;
+    .section-inner{
+        a{
+            color: black;
+            text-decoration: none; 
+         }
+        &__title{
+            text-align: center;
+            padding-top: 80px;
+            padding-bottom: 50px;
+        }
+        &__container{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            &__item{
+
+                &-title{
+                    padding-top: 25px;
+                    padding-bottom: 15px;
+                    font-weight: 600;
+                    font-size: 18px;
+                    
+                    
+                }
+                &-subtitle{
+                    font-weight: normal;
+                    padding-bottom: 15px;
+                    font-size: 14px;
+                    
+                }
+                &-date{
+                    a{
+                        text-decoration: none;
+                        color: rgba(30, 30, 30, 0.5);
+                    }
+                    padding-bottom: 130px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    
+                }
+            }
+        }
+    }
+}
+
+// === /More Cards ===
+
+// === Contacts ===
+
+.section-contacts{
+    position: relative;
+    background: #E5E5E5;
+    img{
+        padding-bottom: 80px;
+    }
+    .section-inner{
+        &__title{
+            padding-top: 100px;
+            padding-bottom: 40px;
+            
+        }
+        &__info{
+            width: 450px;
+            height: 200px;
+            background-color:white;
+            position:absolute;
+            top: 100px;
+            left: 60%;
+            display: flex;
+            justify-content: space-between;
+            &-address{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                padding-top: 60px;
+                padding-left: 30px;
+                .title{
+                    padding-bottom: 10px;
+                    font-weight: 600;
+                    font-size: 18px;
+                    
+                    color: #000000;
+                }
+                .desc{
+                    font-weight: normal;
+                    font-size: 14px;
+                    
+                    line-height: 25px;
+                }
+            }
+            &-phone{
+                padding-top: 60px;
+                padding-right: 30px;
+                .title{
+                    padding-bottom: 10px;
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: #000000;
+                    
+                }
+                .desc{
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}
+
+// === /Contacts ===
 
 // === Footer ===
 
