@@ -972,6 +972,10 @@ body {
   fill: #8d8d8d;
 }
 
+main .section-application {
+  padding: 116px 0 100px;
+}
+
 .section-aboutus {
   background-color: #1E1E1E;
 }
@@ -1204,7 +1208,8 @@ body {
   margin-left: 30px;
 }
 .section-application .section-inner__photo {
-  max-width: 300px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .section-footer {
@@ -1505,6 +1510,10 @@ body {
 
   .slider-arrows {
     display: none !important;
+  }
+
+  .section-licenses .slider-title {
+    display: block;
   }
 }
 @media (max-width: 700px) {

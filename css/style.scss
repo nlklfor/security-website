@@ -638,6 +638,15 @@ body{
 
 // === /Licenses ===
 
+// === Application ===
+
+main{
+    .section-application{
+        padding: 116px 0 100px;
+    }
+}
+
+// === /Application ===
 
 // === AboutUs ===
 
@@ -914,7 +923,7 @@ body{
             }
         }
         &__photo{
-            max-width: 300px;
+            align-self: flex-end;
         }
     }
 }
@@ -1200,6 +1209,11 @@ body{
 
     .slider-arrows{
         display: none !important;
+    }
+    .section-licenses{
+        .slider-title{
+            display: block;
+        }
     }
 
     // === Media /Footer ===

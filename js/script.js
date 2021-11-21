@@ -61,6 +61,18 @@ const swiper2 = new Swiper('.reviews-swiper', {
     scrollbar: {
       el: '.reviews-swiper-scrollbar',
     },
+
+    breakpoints:{
+        1000:{
+            slidesPerView: 3,
+        },
+        600:{
+            slidesPerView: 2,
+        },
+        300:{
+            slidesPerView: 1,
+        },
+    }
 });
 
 const swiper3 = new Swiper('.licenses-swiper', {
@@ -76,6 +88,18 @@ const swiper3 = new Swiper('.licenses-swiper', {
     scrollbar: {
       el: '.licenses-swiper-scrollbar',
     },
+
+    breakpoints:{
+        1000:{
+            slidesPerView: 3,
+        },
+        600:{
+            slidesPerView: 2,
+        },
+        300:{
+            slidesPerView: 1,
+        },
+    }
 });
 
 // === /Swipers ===
