@@ -1659,15 +1659,80 @@ main .section-application {
 }
 
 .ps-section-promo {
+  min-height: 660px;
   padding: 80px 0 100px;
   background-color: #1E1E1E;
 }
 .ps-section-promo .section-inner {
-  display: -ms-grid;
-  display: grid;
+  position: relative;
 }
 .ps-section-promo .ps-promo-content {
-  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 116px;
+  z-index: 2;
+}
+.ps-section-promo .ps-promo-img {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 764px;
+  height: 480px;
+  background: url("../img/ps-promo.png") no-repeat center 100%;
+  background-size: cover;
+}
+
+@media (max-width: 1000px) {
+  .ps-section-promo {
+    padding: 0;
+    padding-bottom: 156px;
+  }
+  .ps-section-promo .section-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 100%;
+  }
+  .ps-section-promo .ps-promo-content {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 32px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    position: static;
+    text-align: center;
+  }
+  .ps-section-promo .ps-promo-content .promo__send-button {
+    margin: 0 auto;
+  }
+  .ps-section-promo .ps-promo-img {
+    background-position-y: 0%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    position: static;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .ps-section-promo .section-inner {
+    max-width: 400px;
+  }
+  .ps-section-promo .promo-title {
+    font-size: 24px;
+  }
+  .ps-section-promo .promo-subtitle {
+    font-size: 14px;
+  }
+  .ps-section-promo .ps-promo-img {
+    background-position-x: 100%;
+  }
 }
 @media (max-width: 1400px) {
   .section-inner {
@@ -1688,6 +1753,11 @@ main .section-application {
   }
   .algorithm-cards__item + .algorithm-cards__item {
     margin-left: 20px;
+  }
+}
+@media (max-width: 1300px) {
+  .section-inner__photo {
+    display: none;
   }
 }
 @media (max-width: 1200px) {
@@ -1744,6 +1814,7 @@ main .section-application {
   }
 
   .header-menu--active {
+    z-index: 10;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

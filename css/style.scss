@@ -1366,16 +1366,69 @@ main{
 // === ps-sec ===
 
 .ps-section-promo{
+    min-height: 660px;
     padding: 80px 0 100px;
     background-color: #1E1E1E;
     .section-inner{
-        display: grid;
+        position: relative;
     }
     .ps-promo-content{
-        z-index: 1;
+        position: absolute;
+        left: 0;
+        top: 116px;
+        z-index: 2;
     }
     .ps-promo-img{
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 764px;
+        height: 480px;
+        background: url('../img/ps-promo.png') no-repeat center 100%;
+        background-size: cover;
+    }
+}
 
+@media (max-width: 1000px){
+    .ps-section-promo{
+        padding: 0;
+        padding-bottom: 156px;
+        .section-inner{
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+        }
+        .ps-promo-content{
+            max-width: 800px;
+            margin: 0 auto;
+            margin-top: 32px;
+            order: 2;
+            position: static;
+            text-align: center;
+            .promo__send-button{
+                margin: 0 auto;
+            }
+        }
+        .ps-promo-img{
+            background-position-y: 0%;
+            order: 1;
+            position: static;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .ps-section-promo{
+        .section-inner{
+            max-width: 400px;
+        }
+        .promo-title{font-size: 24px;}
+        .promo-subtitle{font-size: 14px;}
+        .ps-promo-img{
+            background-position-x: 100%;
+        }
     }
 }
 
@@ -1405,6 +1458,18 @@ main{
             }
         }
     }
+}
+
+@media (max-width: 1300px){
+    .section-inner__photo{
+        display: none;
+    }
+    // .section-inner__content__text{
+    //     text-align: center;
+    // }
+    // .section-inner__content__application{
+    //     //text-align: center;
+    // }
 }
 
 @media (max-width: 1200px){
@@ -1448,6 +1513,7 @@ main{
         display: none;
     }
     .header-menu--active{
+        z-index: 10;
         display: flex;
         background-color: #353535;
         position: absolute;
