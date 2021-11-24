@@ -702,6 +702,7 @@ main{
             }
         }
         &__statistics{
+            position: relative;
             padding-bottom: 120px;
             &_count{
                 
@@ -711,22 +712,26 @@ main{
                     color: #000000;
                 }
                 .big-business{
+                    
                     position: absolute;
-                    top: 112%;
+                    top: 10%;
                 }
                 .small-business{
+                    display: flex;
                     position: absolute;
-                    top: 133%;
+                    top: 45%;
                 }
                 .flats{
+                    display: flex;
                     position: absolute;
-                    top: 112%;
-                    left: 73%;
+                    top: 10%;
+                    left: 80%;
                 }
                 .cottages{
+                    display: flex;
                     position: absolute;
-                    left: 73%;
-                    top: 135%;
+                    left: 80%;
+                    top: 50%;
                 }
             }
             .section-subtitle{
@@ -737,20 +742,24 @@ main{
                     
                 }
                 .big-business{
+                    display: flex;
                     position: absolute;
-                    top: 120%;
+                    top: 25%;
                 }
                 .small-business{
+                    display: flex;
                     position: absolute;
-                    top: 142%;
+                    top: 60%;
                 }
                 .flats{
+                    display: flex;
                     position: absolute;
-                    top: 120%;
+                    top: 25%;
                 }
                 .cottages{
+                    display: flex;
                     position: absolute;
-                    top: 143%;
+                    top: 65%;
                 }
             }
         }
@@ -1838,6 +1847,378 @@ main{
     }
 }
 
+// === Media AboutUs ===
 
+@media (max-width: 1400px){
+    .section-aboutus{
+        .section-inner{
+            .section-image{
+                max-width: 1000px;
+            }
+        }
+    }
+    .section-service{
+        .section-inner{
+            &__statistics{
+                img{
+                    display: none;
+                }
+                &_count{
+                    
+
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1024px){
+    .section-aboutus{
+        .section-inner{
+            .section-image{
+                max-width: 1000px;
+            }
+        }
+    }
+    .section-service{
+        .section-inner{
+            &__statistics{
+                img{
+                    display: none;
+                }
+                &_count{
+                    
+
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    .section-aboutus{
+        .section-inner{
+            .section-image{
+                max-width: 600px;
+            }
+        }
+    }
+    .section-service{
+        .section-inner{
+            &__statistics{
+                img{
+                    display: none;
+                }
+                &_count{
+                    
+
+                }
+            }
+        }
+    }
+}
+@media (max-width: 414px){
+    .section-aboutus{
+        .section-inner{
+            .section-image{
+                max-width: 400px;
+            }
+            &__main{
+                .section-title{
+                    h1{
+                        line-height: 45px;
+        
+                    }
+                    h2{
+                        line-height: 25px;
+                    }
+                }
+                
+            }
+            
+        }
+    }
+    .section-service{
+        .section-inner{
+            &__statistics{
+                img{
+                    display: none;
+                }
+                &_count{
+                    
+
+                }
+            }
+        }
+    }
+}
+@media (max-width: 375px){
+    .section-aboutus{
+        .section-inner{
+            .section-image{
+                max-width: 300px;
+            }
+            &__main{
+                .section-title{
+                    .Title_1{
+                        line-height: 45px;
+        
+                    }
+                    .Title_2{
+                        line-height: 25px;
+                    }
+                }
+                
+            }
+        }
+    }
+    .section-service{
+        .section-inner{
+            &__statistics{
+                img{
+                    display: none;
+                }
+                &_count{
+                    
+
+                }
+            }
+        }
+    }
+}
+
+// === /Media Service ===
+// === Media Zone ===
+@media (max-width: 1024px){
+    .section-zone{
+        .section-inner{
+            &__map{
+                img{
+                    max-width: 700px;
+                }
+            }
+            &__list{
+                padding-left: 0;
+                padding-right: 10px;
+                .k-cities{
+                    p{
+                        position: absolute;
+                        left: 70%;  
+                    }
+                }
+                .l-cities{
+                    p{
+                        position: absolute;
+                        left: 70%; 
+                    }
+                }
+                .o-cities{
+                    p{
+                        position: absolute;
+                        left: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .section-zone{
+        .section-inner{
+            &__map{
+                img{
+                    display: none;
+                }
+            }
+            &__list{
+                padding-left: 0;
+                padding-right: 200px;
+                .k-cities{
+                    p{
+                        position: absolute;
+                        left: 10%;  
+                    }
+                }
+                .l-cities{
+                    p{
+                        position: absolute;
+                        left: 10%; 
+                    }
+                }
+                .o-cities{
+                    p{
+                        position: absolute;
+                        left: 10%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 414px){
+    .section-zone{
+        .section-inner{
+            &__map{
+                img{
+                    display: none;
+                }
+            }
+            &__list{
+                padding-left: 0;
+                padding-right: 200px;
+                .k-cities{
+                    p{
+                        position: absolute;
+                        left: 5%;  
+                    }
+                }
+                .l-cities{
+                    p{
+                        position: absolute;
+                        left: 5%; 
+                    }
+                }
+                .o-cities{
+                    p{
+                        position: absolute;
+                        left: 5%;
+                    }
+                }
+            }
+        }
+    }
+}
+// === /Media Zone ===
+
+// === Media Team ===
+@media (max-width: 1024px){
+    .section-team{
+        .section-inner{
+            &__photo{
+                display: flex;
+                margin: 0 auto;
+                padding-bottom: 50px;
+                img{
+                    max-width: 1000px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    .section-team{
+        .section-inner{
+            &-title{
+                h1{
+                    
+                    font-size: 30px;
+                }
+            }
+            &__photo{
+                align-items:center;
+                display: flex;
+                margin: 0 auto;
+                img{
+                    max-width: 600px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 414px){
+    .section-team{
+        .section-inner{
+            &-title{
+                h1{
+                    
+                    font-size: 30px;
+                }
+            }
+            &__photo{
+                display: flex;
+                margin: 0 auto;
+                padding-bottom: 50px;
+                img{
+                    max-width: 400px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 375px){
+    .section-team{
+        .section-inner{
+            &-title{
+                h1{
+                    
+                    font-size: 30px;
+                }
+            }
+            &__photo{
+                display: flex;
+                margin: 0 auto;
+                padding-bottom: 50px;
+                img{
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+}
+
+    
+// === /Media Team ===
+
+
+// === Media Application ===
+
+@media (max-width: 414px){
+    .section-application{
+        .section-inner{
+            &__content{
+                &__subtitle{
+                    max-width: 300px;
+                    font-size: 16px;
+                }
+                &__title{
+                    max-width: 300px;
+                    font-size: 20px;
+
+                }
+                &__text{
+
+                }
+
+                &__application{
+                    
+                    &-placeholder{
+                        
+                        input{
+                            display: flex;
+                            flex-direction: column;
+                            padding-right: 40px;
+                        }
+                    }
+                    
+                }
+            }
+            .section-application__button{
+                label{
+                    padding-right: 20px;
+                }
+                display: block;
+                input{
+                   
+                    padding-left: 30px;
+                }
+                button{
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+// === /Media Application ===
 
 // === /MEDIA ===
