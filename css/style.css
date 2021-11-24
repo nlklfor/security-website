@@ -1809,6 +1809,112 @@ main .section-application {
     padding: 56px 0;
   }
 }
+.ps-section-peculiarities {
+  padding: 116px 0;
+  background: white;
+}
+.ps-section-peculiarities .section-title {
+  margin-bottom: 56px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #000000;
+}
+
+.ps-peculiarities-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ps-peculiarities__image {
+  margin-right: 36px;
+}
+
+.ps-peculiarities-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ps-peculiarities-list-item {
+  position: relative;
+  padding: 0 0 0 40px;
+}
+.ps-peculiarities-list-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.ps-peculiarities-list-item__title {
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1E1E1E;
+}
+.ps-peculiarities-list-item__text:first-child {
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1E1E1E;
+}
+.ps-peculiarities-list-item__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.ps-peculiarities-list-item__links p {
+  margin-right: 24px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.ps-peculiarities-list-item__links a {
+  margin-right: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.ps-peculiarities-list-item:before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #000000;
+  content: "";
+  left: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  top: 6px;
+}
+.ps-peculiarities-list-item:not(:last-child):after {
+  position: absolute;
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
+  width: 2px;
+  bottom: -38px;
+  content: "";
+  left: 5px;
+  top: 6px;
+}
+
+@media (max-width: 1300px) {
+  .ps-peculiarities__image {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .ps-section-peculiarities {
+    padding: 56px 0;
+  }
+}
 @media (max-width: 1400px) {
   .section-inner {
     max-width: 1100px;

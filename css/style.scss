@@ -1507,6 +1507,112 @@ main{
 
 // === /ps-services ===
 
+// === peculiarities ===
+
+.ps-section-peculiarities{
+    padding: 116px 0;
+    background: white;
+    .section-title{
+        margin-bottom: 56px;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        color: #000000;
+    }
+}
+
+.ps-peculiarities-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.ps-peculiarities__image{
+    margin-right: 36px;
+}
+
+.ps-peculiarities-list{
+    @include list-style-none();
+    &-item{
+
+        &:not(:last-child){
+            margin-bottom: 32px;
+        }
+        &__title{
+            margin-bottom: 12px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: #1E1E1E;
+        }
+        &__text{
+            &:first-child{
+                margin-bottom: 12px;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 22px;
+                color: #1E1E1E;
+            }
+        }
+        &__links{
+            display: flex;
+            align-items: center;
+            p{
+                margin-right: 24px;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 22px;
+                color: #000000
+            }
+            a{
+                margin-right: 12px;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: #000000;
+            }
+        }
+
+        position: relative;
+        padding: 0 0 0 40px;
+        &:before {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #000000;
+            content: "";
+            left: 0;
+            transition: .3s ease-in-out;
+            top: 6px;
+        }
+        &:not(:last-child):after{
+            position: absolute;
+            border-left: 2px solid rgba(0, 0, 0, 0.2);
+            width: 2px;
+            bottom: -38px;
+            content: "";
+            left: 5px;
+            top: 6px;
+        }
+    }
+}
+
+@media (max-width: 1300px){
+    .ps-peculiarities__image{
+        display: none;
+    }
+}
+
+@media (max-width: 700px){
+    .ps-section-peculiarities{
+        padding: 56px 0;
+    }   
+}
+
+
+// === /peculiarities ===
+
 // === MEDIA ===
 
 
