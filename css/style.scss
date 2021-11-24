@@ -1434,6 +1434,78 @@ main{
 
 // === /ps-sec ===
 
+// === ps-services ===
+
+.ps-section-services{
+    padding: 116px 0;
+    background: #E5E5E5;
+    .section-title{
+        margin-bottom: 56px;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        color: #1E1E1E;
+    }
+}
+
+.ps-services-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ps-services-card{
+    background: #ECECEC;
+    border-radius: 10px;
+    padding: 40px 0;
+    width: 410px;
+    min-height: 204px;
+    &__title{
+        text-align: center;
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 130%;
+        color: #1E1E1E;
+        margin-bottom: 16px;
+    }
+    &__subtitle{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 130%;
+        text-align: center;
+        color: #000000;
+    }
+}
+
+@media (max-width: 1400px){
+    .ps-services-card{
+        width: 360px;
+    }
+}
+
+@media (max-width: 1200px){
+    .ps-services-card{
+        width: 327px;
+    }
+}
+
+@media (max-width: 1000px){
+    .ps-services-cards{
+        flex-direction: column;
+    }
+    .ps-services-card:not(:last-child){
+        margin-bottom: 16px;
+    }
+}
+
+@media(max-width: 700px){
+    .ps-services{
+        padding: 56px 0;
+    }
+}
+
+// === /ps-services ===
 
 // === MEDIA ===
 
@@ -1615,7 +1687,6 @@ main{
     .section-inner{
         max-width: 500px;
     }
-
     // === RPromo ===
 
     .section-promo{
@@ -1649,6 +1720,9 @@ main{
 @media (max-width: 500px){
     .section-inner{
         max-width: 400px;
+    }
+    .section-title{
+        font-size: 24px !important;
     }
 }
 
