@@ -23,11 +23,36 @@ document.addEventListener('DOMContentLoaded', () => {
         closeBtn.addEventListener('click', ()=>{
             popupWindow.classList.toggle('popup--active');
         });
+
+        const unActiveBtns = document.querySelectorAll('.unActive');
+        unActiveBtns.forEach(element => {
+            element.addEventListener('click', ()=>{
+                popupWindow.classList.toggle('popup--active');
+            });
+        });
+
     }
 
     popup();
 
     // === /popup ===
+
+    // === Lang ===
+
+    function lang(){
+        const langBtns = document.querySelectorAll('.change-lang-btn');
+        console.log(langBtns);
+        langBtns.forEach(element => {
+            element.addEventListener('click', (e)=>{
+                const self = e.currentTarget;
+                self.classList.toggle('change-lang-btn--active');
+            });
+        });
+    }
+
+    lang();
+
+    // === /Lang ===
 
 });
 

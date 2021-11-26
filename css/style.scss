@@ -125,7 +125,7 @@ body{
 }
 
 .change-lang-btn{
-    cursor: pointer;
+    position: relative;
     display: flex;
     align-items: center;
     &__name{
@@ -141,6 +141,7 @@ body{
         }
     }
     svg{
+        cursor: pointer;
         transition: .2s;
     }
     &:hover, &:active, &focus{
@@ -149,6 +150,36 @@ body{
                 fill: rgba(114, 114, 114, 0.8);
             }
         }
+    }
+}
+.change-lang__window{
+    display: none;
+}
+.change-lang-btn--active{
+    .change-lang__window{
+        display: block;
+        position: absolute;
+        background-color: #353535;
+        top: calc(100% + 8px);
+        left: 0;
+        width: 55%;
+        height: 60px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        p{
+            color: white;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 140%;
+            text-transform: uppercase;
+            &:not(:last-child){
+                margin-bottom: 8px;
+            }
+        }
+    }
+    svg{
+        transition: .4s;
+        transform: rotate(-180deg);
     }
 }
 
