@@ -422,10 +422,21 @@ body{
         margin-bottom: 56px;
     }
     &-item{
+        cursor: pointer; 
         min-height: 420px;
         min-width: 320px;
         background-color: #F4F4F5;
         padding: 32px 32px 0 32px;
+        .hidden-icon{
+            display: none;
+        }
+        &:focus, &:hover, &:active{
+            transition: .4s;
+            background: #F5E25F;
+            .hidden-icon{
+                display: block;
+            }
+        }
         &__icon{
             margin-bottom: 40px;
         }
@@ -437,6 +448,7 @@ body{
             color: #000000
         }
         &__subtitle{
+            margin-bottom: 20px;
             max-width: 290px;
             font-weight: normal;
             font-size: 14px;
@@ -567,11 +579,25 @@ body{
 }
 
 .reviews-slider-item{
+    cursor: pointer;
     padding: 32px;
     width: 416px !important;
     height: 245px !important;
     background: #F4F4F5;
     border-radius: 10px;
+    &:hover, &:focus, &:active{
+        transition: .4s;
+        background: #1E1E1E;
+        .reviews-slider-item__desc{
+            color: white;
+        }
+        .reviews-slider-item__title{
+            color: white;
+        }
+        .reviews-slider-item__btn-read-more{
+            color: white;
+        }
+    }
     &__title{
         font-weight: 600;
         font-size: 18px;
@@ -1495,7 +1521,7 @@ main{
 
 @media (max-width: 1200px){
     .ps-services-card{
-        width: 327px;
+        width: 300px;
     }
 }
 
@@ -1621,6 +1647,181 @@ main{
 
 
 // === /peculiarities ===
+
+// === Ps-Benefits ===
+
+.ps-section-benefits{
+    background: #1E1E1E;
+    padding: 116px 0;
+    .section-title{
+        margin-bottom: 56px;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
+
+.ps-benefits-cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__card{
+        text-align: center;
+        min-height: 374px;
+        max-width: 324px;
+        padding: 54px 0 0 0;
+        svg{
+            margin-bottom: 46px;
+        }
+    }
+}
+.benefits-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 20px;
+    &__title{
+        margin-bottom: 16px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px; 
+        text-align: center;
+        color: #FFFFFF
+    }
+    &__text{
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 160%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
+
+@media (max-width: 1000px){
+    .ps-benefits-cards{
+        flex-wrap: wrap;
+        justify-content: center;
+        &__card{
+            margin: 8px;
+            min-height: 316px;
+            max-width: 327px;
+        }
+    }
+}
+
+@media (max-width: 700px){
+    .ps-section-benefits{
+        padding: 56px 0;
+    }
+}
+
+// === /Ps-Benefits ===
+
+
+// === Ps-Questions ===
+
+.ps-section-questions{
+    background: #E5E5E5;
+    padding: 116px 0;
+    .section-title{
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 56px;
+    }
+}
+
+.accordion-list{
+    @include list-style-none();
+}
+
+.questions-accordion{
+    &:not(:last-child){
+        margin-bottom: 40px;
+    }
+    max-width: 730px;
+    width: 730px;
+    margin: 0 auto;
+    &__title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+    }
+}
+
+.accordion__control{
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    background: #E5E5E5;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #1E1E1E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion__content{
+    display: none;
+}
+
+.accordion__content{
+    &--active{
+        border-bottom: 2px solid #1E1E1E;
+        border-left: 2px solid #1E1E1E;
+        border-right: 2px solid #1E1E1E;
+        padding: 20px;
+        display: block;
+    }
+}
+.accordion__icon{
+    transition: .4s;
+}
+.accordion__icon--active{
+    transform: rotate(45deg);
+}
+
+@media(max-width: 900px){
+    .questions-accordion{
+        max-width: 600px;
+    }
+    .accordion__title{
+        text-align: left;
+    }
+}
+@media(max-width: 700px){
+    .questions-accordion{
+        max-width: 400px;
+    }
+}
+@media(max-width: 500px){
+    .questions-accordion{
+        &__title{
+            font-size: 14px;
+        }
+        max-width: 327px;
+    }
+    .accordion__content{
+        &--active{
+            font-size: 12px;
+        }
+    }
+}
+
+@media(max-width: 400px){
+    .questions-accordion{
+        max-width: 300px;
+    }
+}
+
+// === /Ps-Questions ===
 
 // === MEDIA ===
 
@@ -1863,10 +2064,6 @@ main{
                 img{
                     display: none;
                 }
-                &_count{
-                    
-
-                }
             }
         }
     }
@@ -1885,10 +2082,6 @@ main{
                 img{
                     display: none;
                 }
-                &_count{
-                    
-
-                }
             }
         }
     }
@@ -1906,10 +2099,6 @@ main{
             &__statistics{
                 img{
                     display: none;
-                }
-                &_count{
-                    
-
                 }
             }
         }
@@ -1942,10 +2131,6 @@ main{
                 img{
                     display: none;
                 }
-                &_count{
-                    
-
-                }
             }
         }
     }
@@ -1975,10 +2160,6 @@ main{
             &__statistics{
                 img{
                     display: none;
-                }
-                &_count{
-                    
-
                 }
             }
         }
@@ -2182,12 +2363,7 @@ main{
                 &__title{
                     max-width: 300px;
                     font-size: 20px;
-
                 }
-                &__text{
-
-                }
-
                 &__application{
                     
                     &-placeholder{
