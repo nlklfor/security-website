@@ -15,6 +15,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // === /Burger ===
 
+    // === popup ===
+
+    function popup(){
+        const closeBtn = document.querySelector('.window-close');
+        const popupWindow = document.querySelector('.popup');
+        closeBtn.addEventListener('click', ()=>{
+            popupWindow.classList.toggle('popup--active');
+        });
+    }
+
+    popup();
+
+    // === /popup ===
+
 });
 
 
