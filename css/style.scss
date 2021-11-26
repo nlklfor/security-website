@@ -707,118 +707,155 @@ main{
 
 // === AboutUs ===
 
-    .section-aboutus{
-        background-color: #1E1E1E;
-        .section-inner{
-            
-            &__main{
-                .section-image{   
-                        width: 1280px;
-                        height: 720px;
-                        background:url(../img/AboutUs.png) no-repeat center ;
-                        
-                    .section-title{
-                        h1{
-                            padding-top: 230px;
-                            font-weight: bold;
-                            font-size: 50px;
+.section-aboutus{
+    background-color: #1E1E1E;
+    .section-inner{
+        
+        &__main{
+            .section-image{   
+                    width: 1280px;
+                    height: 720px;
+                    background:url(../img/AboutUs.png) no-repeat center ;
+                    
+                .section-title{
+                    h1{
+                        padding-top: 230px;
+                        font-weight: bold;
+                        font-size: 50px;
+                        text-align: center;
+                        color: #FFFFFF;
+                    }
+                    .section-subtitle{
+                        h2{
+                            padding-top: 32px;
+                            font-weight: 500;
+                            font-size: 18px;
+                            
                             text-align: center;
                             color: #FFFFFF;
-                        }
-                        .section-subtitle{
-                            h2{
-                                padding-top: 32px;
-                                font-weight: 500;
-                                font-size: 18px;
-                               
-                                text-align: center;
-                                color: #FFFFFF;
-                            }
                         }
                     }
                 }
             }
         }
     }
+}
 
-// === /AboutUs ===
-
-// === Service ===
- 
 .section-service{
-    background-color: white;
-    .section-inner{
-        &-title{
-            h1{
-                padding-top: 120px;
-                padding-bottom: 80px;
-                font-weight: bold;
-                font-size: 36px;
-                text-align: center;
-                color: #1E1E1E;
-            }
+    background: #FFFFFF;
+    padding: 116px 0;
+    .section-title{
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        color: #1E1E1E;
+        margin-bottom: 72px;
+    }
+}
+.service-objects{
+    background: url(../img/svg/jopa.svg) no-repeat center;
+    background-size: 37%;
+    min-height: 520px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.objects-item{
+    &__count{
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 68px;
+        color: #000000;
+    }
+    &__subtitle{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #000000;
+        max-width: 190px;
+    }
+}
+.objects-item1{
+    position: relative;
+    p{
+        top: 100px;
+        left: 0;
+        position: absolute;
+    }
+}
+.objects-item2{
+    justify-self: end;
+    position: relative;
+    h3{
+        max-width: 200px;
+        margin-left: auto;
+    }
+    p{
+        top: 100px;
+        right: 0;
+        position: absolute;
+    }
+}
+.objects-item3{
+    position: relative;
+    h3{
+        position: absolute;
+        left: 0;
+        bottom: 180px;
+    }
+}
+.objects-item4{
+    justify-self: end;
+    position: relative;
+    h3{
+        position: absolute;
+        right: 0;
+        bottom: 180px;
+    }
+    p{
+        right: 0;
+        position: absolute;
+    }
+}
+
+@media (max-width: 1400px){
+    .service-objects{
+        background-position-y: 20%;
+        background-size: 25%;
+    }
+}
+@media (max-width: 1200px){
+    .section-service{
+        padding: 56px 0;
+    }
+    .objects-item{
+        position: static;
+        justify-self: center;
+        h3{position: static; margin: 0;}
+        p{position: static;}
+        svg{
+            display: none;
         }
-        &__statistics{
-            position: relative;
-            padding-bottom: 120px;
-            &_count{
-                
-                p{
-                    font-weight: 600;
-                    font-size: 56px;
-                    color: #000000;
-                }
-                .big-business{
-                    
-                    position: absolute;
-                    top: 10%;
-                }
-                .small-business{
-                    display: flex;
-                    position: absolute;
-                    top: 45%;
-                }
-                .flats{
-                    display: flex;
-                    position: absolute;
-                    top: 10%;
-                    left: 80%;
-                }
-                .cottages{
-                    display: flex;
-                    position: absolute;
-                    left: 80%;
-                    top: 50%;
-                }
-            }
-            .section-subtitle{
-                p{
-                    font-weight: 500;
-                    font-size: 18px;
-                    color: #000000;
-                    
-                }
-                .big-business{
-                    display: flex;
-                    position: absolute;
-                    top: 25%;
-                }
-                .small-business{
-                    display: flex;
-                    position: absolute;
-                    top: 60%;
-                }
-                .flats{
-                    display: flex;
-                    position: absolute;
-                    top: 25%;
-                }
-                .cottages{
-                    display: flex;
-                    position: absolute;
-                    top: 65%;
-                }
-            }
+    }
+    
+}
+
+@media (max-width: 900px){
+    .service-objects{
+       background: none;
+    }
+}
+@media (max-width: 700px){
+    .service-objects{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 40px;
+    }
+    .objects-item{
+        justify-self: left;
+        &__count{
+            margin-bottom: 16px;
         }
     }
 }
@@ -2178,30 +2215,12 @@ main{
             }
         }
     }
-    .section-service{
-        .section-inner{
-            &__statistics{
-                img{
-                    display: none;
-                }
-            }
-        }
-    }
 }
 @media (max-width: 1024px){
     .section-aboutus{
         .section-inner{
             .section-image{
                 max-width: 1000px;
-            }
-        }
-    }
-    .section-service{
-        .section-inner{
-            &__statistics{
-                img{
-                    display: none;
-                }
             }
         }
     }
@@ -2245,15 +2264,6 @@ main{
             
         }
     }
-    .section-service{
-        .section-inner{
-            &__statistics{
-                img{
-                    display: none;
-                }
-            }
-        }
-    }
 }
 @media (max-width: 375px){
     .section-aboutus{
@@ -2272,15 +2282,6 @@ main{
                     }
                 }
                 
-            }
-        }
-    }
-    .section-service{
-        .section-inner{
-            &__statistics{
-                img{
-                    display: none;
-                }
             }
         }
     }
