@@ -1421,11 +1421,14 @@ main .section-application {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+.section-news .section-inner__container__item {
+  margin-right: 3%;
 }
 .section-news .section-inner__container__item-title {
   padding-top: 25px;
@@ -1446,6 +1449,9 @@ main .section-application {
 .section-news .section-inner__container__item-date a {
   text-decoration: none;
   color: rgba(30, 30, 30, 0.5);
+}
+.section-news .section-inner__container__item:nth-child(+3n) {
+  margin-right: 0%;
 }
 .section-news .section-inner__pages {
   padding-bottom: 85px;
@@ -1483,7 +1489,7 @@ main .section-application {
   text-decoration: none;
 }
 .section-card__back {
-  padding-left: 80px;
+  margin-left: 80px;
   padding-top: 30px;
 }
 .section-card .section-inner {
@@ -1493,6 +1499,21 @@ main .section-application {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.section-card .section-inner__card-wrapper {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.section-card .section-inner__card-wrapper p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: normal;
+  font-size: 16px;
+  color: #000000;
 }
 .section-card .section-inner__card-title {
   font-weight: bold;
@@ -1509,21 +1530,12 @@ main .section-application {
   color: rgba(30, 30, 30, 0.5);
 }
 .section-card .section-inner__card-logo {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.section-card .section-inner__card-subtitle {
-  font-weight: 600;
-  font-size: 20px;
-  color: #000000;
-}
-.section-card .section-inner__card-desc {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  font-weight: normal;
-  font-size: 16px;
-  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .section-card .section-inner__card-list {
   font-weight: normal;
@@ -1620,11 +1632,14 @@ main .section-application {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+.section-more .section-inner__container__item {
+  margin-right: 3%;
 }
 .section-more .section-inner__container__item-title {
   padding-top: 25px;
@@ -1645,6 +1660,9 @@ main .section-application {
 .section-more .section-inner__container__item-date a {
   text-decoration: none;
   color: rgba(30, 30, 30, 0.5);
+}
+.section-more .section-inner__container__item:nth-child(+3n) {
+  margin-right: 0%;
 }
 
 .section-contacts {
@@ -1683,7 +1701,7 @@ main .section-application {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 60px;
-  padding-left: 30px;
+  margin-left: 30px;
 }
 .section-contacts .section-inner__info-address .title {
   padding-bottom: 10px;
@@ -1698,7 +1716,7 @@ main .section-application {
 }
 .section-contacts .section-inner__info-phone {
   padding-top: 60px;
-  padding-right: 30px;
+  margin-right: 30px;
 }
 .section-contacts .section-inner__info-phone .title {
   padding-bottom: 10px;
@@ -2818,6 +2836,16 @@ main .section-application {
     margin-top: 20px;
   }
 }
+@media (max-width: 1400px) {
+  .section-news .section-inner__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-news .section-inner__container__item:nth-child(+3n) {
+    margin-right: 3%;
+  }
+}
 @media (max-width: 1000px) {
   .section-news .section-inner__container {
     -webkit-box-pack: center;
@@ -2831,6 +2859,13 @@ main .section-application {
   }
   .section-news .section-inner__container__item-logo img {
     max-width: 300px;
+  }
+}
+@media (max-width: 1400px) {
+  .section-more .section-inner__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media (max-width: 1000px) {
