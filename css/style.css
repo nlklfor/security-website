@@ -491,6 +491,9 @@ body {
 }
 
 .change-lang-btn--active .change-lang__window {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: block;
   position: absolute;
   background-color: #353535;
@@ -501,14 +504,14 @@ body {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.change-lang-btn--active .change-lang__window p {
+.change-lang-btn--active .change-lang__window a {
   color: white;
   font-weight: 600;
   font-size: 14px;
   line-height: 140%;
   text-transform: uppercase;
 }
-.change-lang-btn--active .change-lang__window p:not(:last-child) {
+.change-lang-btn--active .change-lang__window a:not(:last-child) {
   margin-bottom: 8px;
 }
 .change-lang-btn--active svg {
@@ -654,10 +657,17 @@ body {
 }
 
 .promo__send-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #1E1E1E;
   background: #FFFFFF;
+}
+.promo__send-button svg {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .promo__send-button:hover, .promo__send-button:active, .promo__send-button:focus {
   color: #FFFFFF;
@@ -749,6 +759,11 @@ body {
 .section-services-slider {
   background: #FFFFFF;
   padding: 116px 0 100px;
+}
+
+.slider-arrow__item {
+  border: none;
+  background: none;
 }
 
 .slider-title {
@@ -2897,7 +2912,6 @@ main .section-application {
     max-width: 800px;
   }
   .section-contacts .section-inner__info {
-    width: 300px;
     height: 200px;
   }
 }

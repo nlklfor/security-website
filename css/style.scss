@@ -157,6 +157,7 @@ body{
 }
 .change-lang-btn--active{
     .change-lang__window{
+        @include list-style-none();
         display: block;
         position: absolute;
         background-color: #353535;
@@ -166,7 +167,7 @@ body{
         height: 60px;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
-        p{
+        a{
             color: white;
             font-weight: 600;
             font-size: 14px;
@@ -308,9 +309,13 @@ body{
     border: 1px solid #FFFFFF;
 }
 .promo__send-button{
+    display: flex;
     box-sizing: border-box;
     color: #1E1E1E;
     background: #FFFFFF;
+    svg{
+        flex-shrink: 0;
+    }
     &:hover, &:active, &:focus{
         color: #FFFFFF;
         background: #1E1E1E;
@@ -408,12 +413,14 @@ body{
 
 
 // === Services slider ===
-
 .section-services-slider{
     background: #FFFFFF;
     padding: 116px 0 100px;
 }
-
+.slider-arrow__item{
+    border: none;
+    background: none;
+}
 .slider-title{
     margin-bottom: 56px;
     display: grid;

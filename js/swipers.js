@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const swiper = new Swiper('.services-swiper', {
     
-            slidesPerView: 3,
+            slidesPerView: 'auto',
             spaceBetween: 40,
     
             // Navigation arrows
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
         const swiper2 = new Swiper('.reviews-swiper', {
         
-            slidesPerView: 3,
+            slidesPerView: 'auto',
             spaceBetween: 24,
     
             navigation: {
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
         const swiper3 = new Swiper('.licenses-swiper', {
         
-            slidesPerView: 4,
+            slidesPerView: 'auto',
             spaceBetween: 40,
     
             navigation: {
